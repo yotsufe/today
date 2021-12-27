@@ -6,20 +6,36 @@ class ReminderDetailViewDataSource: NSObject {
         case date
         case time
         case notes
-        
+
+        static let timeFormatter: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .none
+            formatter.timeStyle = .short
+            return formatter
+        }()
+
+        static let dateFormatter: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.timeStyle = .none
+            formatter.dateStyle = .long
+            return formatter
+        }()
+
         func displayText(for reminder: Reminder?) -> String? {
             switch self {
             case .title:
                 return reminder?.title
             case .date:
-                return reminder?.dueDate.description
+                guard let date = reminder?.dueDate else { return nil }
+                return Self.dateFormatter.string(from: date)
             case .time:
-                return reminder?.dueDate.description
+                guard let date = reminder?.dueDate else { return nil }
+                return Self.timeFormatter.string(from: date)
             case .notes:
                 return reminder?.notes
             }
         }
-        
+
         var cellImage: UIImage? {
             switch self {
             case .title:
@@ -57,3 +73,4 @@ extension ReminderDetailViewDataSource: UITableViewDataSource {
         return cell
     }
 }
+

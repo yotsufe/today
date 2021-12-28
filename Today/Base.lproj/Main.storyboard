@@ -107,6 +107,51 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditTitleCell" id="tYU-KN-e8F">
+                                <rect key="frame" x="0.0" y="68" width="414" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tYU-KN-e8F" id="Omf-df-tsE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCB-Ly-ore">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="34.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="UCB-Ly-ore" secondAttribute="bottom" id="HCx-Pr-aDd"/>
+                                        <constraint firstItem="UCB-Ly-ore" firstAttribute="leading" secondItem="Omf-df-tsE" secondAttribute="leading" constant="20" symbolic="YES" id="UyU-41-R97"/>
+                                        <constraint firstAttribute="trailing" secondItem="UCB-Ly-ore" secondAttribute="trailing" constant="20" symbolic="YES" id="f49-8X-gPH"/>
+                                        <constraint firstItem="UCB-Ly-ore" firstAttribute="top" secondItem="Omf-df-tsE" secondAttribute="top" id="vyW-XS-oh5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNotesCell" rowHeight="216" id="YF4-TS-bO5">
+                                <rect key="frame" x="0.0" y="102.5" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YF4-TS-bO5" id="uy1-hC-CV9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KIP-pV-PHF">
+                                            <rect key="frame" x="20" y="11" width="374" height="194"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="194" id="8Bg-cC-gOx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KIP-pV-PHF" firstAttribute="leading" secondItem="uy1-hC-CV9" secondAttribute="leadingMargin" id="83o-b3-ptW"/>
+                                        <constraint firstItem="KIP-pV-PHF" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="topMargin" id="djv-5o-kK2"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KIP-pV-PHF" secondAttribute="bottom" id="hNZ-3P-QU0"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KIP-pV-PHF" secondAttribute="trailing" id="lQf-i3-wY0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="W0A-6O-Kc3" id="Hl7-PP-LCb"/>

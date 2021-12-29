@@ -107,7 +107,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditTitleCell" id="tYU-KN-e8F">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditTitleCell" id="tYU-KN-e8F" customClass="EditTitleCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="68" width="414" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tYU-KN-e8F" id="Omf-df-tsE">
@@ -127,8 +127,11 @@
                                         <constraint firstItem="UCB-Ly-ore" firstAttribute="top" secondItem="Omf-df-tsE" secondAttribute="top" id="vyW-XS-oh5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleTextField" destination="UCB-Ly-ore" id="HC4-dw-PZF"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditDateCell" rowHeight="216" id="YF4-TS-bO5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditDateCell" rowHeight="216" id="YF4-TS-bO5" customClass="EditDateCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="102.5" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YF4-TS-bO5" id="uy1-hC-CV9">
@@ -143,31 +146,39 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zJd-gN-8S3">
+                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zJd-gN-8S3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
                                         </datePicker>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="zJd-gN-8S3" secondAttribute="bottom" id="7Dy-Oc-boz"/>
                                         <constraint firstItem="KIP-pV-PHF" firstAttribute="leading" secondItem="uy1-hC-CV9" secondAttribute="leadingMargin" id="83o-b3-ptW"/>
                                         <constraint firstAttribute="bottom" secondItem="zJd-gN-8S3" secondAttribute="bottom" id="NF3-Ng-r6G"/>
+                                        <constraint firstAttribute="trailing" secondItem="zJd-gN-8S3" secondAttribute="trailing" id="OQT-Jg-e1T"/>
                                         <constraint firstItem="KIP-pV-PHF" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="topMargin" id="djv-5o-kK2"/>
                                         <constraint firstItem="zJd-gN-8S3" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="top" id="eSr-V7-jjy"/>
+                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="leading" secondItem="uy1-hC-CV9" secondAttribute="leading" id="frd-wI-Voj"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="KIP-pV-PHF" secondAttribute="bottom" id="hNZ-3P-QU0"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="KIP-pV-PHF" secondAttribute="trailing" id="lQf-i3-wY0"/>
+                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="top" id="lQh-jj-f8c"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="datePicker" destination="zJd-gN-8S3" id="B2e-i4-dct"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNotesCell" rowHeight="216" id="n54-Ea-BIP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNotesCell" rowHeight="216" id="n54-Ea-BIP" customClass="EditNotesCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="318.5" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n54-Ea-BIP" id="9kr-UE-kLZ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-DC-5Kp">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Notes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-DC-5Kp">
                                             <rect key="frame" x="20" y="11" width="374" height="194"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="194" id="KlI-NL-Lyv"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="194" id="LZc-pZ-18A"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -180,6 +191,9 @@
                                         <constraint firstItem="sFw-DC-5Kp" firstAttribute="top" secondItem="9kr-UE-kLZ" secondAttribute="topMargin" id="Vrb-dt-VUX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="notesTextView" destination="sFw-DC-5Kp" id="Kg1-aD-JcQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

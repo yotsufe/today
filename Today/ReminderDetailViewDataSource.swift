@@ -73,4 +73,3 @@ extension ReminderDetailViewDataSource: UITableViewDataSource {
         return cell
     }
 }
-

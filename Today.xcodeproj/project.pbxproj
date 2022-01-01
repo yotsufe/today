@@ -76,17 +76,17 @@
 			children = (
 				65D67014277C7C830071F2B2 /* Views */,
 				653E2027275CA9FB0037074E /* AppDelegate.swift */,
-				653E2029275CA9FB0037074E /* SceneDelegate.swift */,
-				653E202B275CA9FB0037074E /* ReminderListViewController.swift */,
-				651000F02767A6600007E705 /* ReminderListDataSource.swift */,
-				653E202D275CA9FB0037074E /* Main.storyboard */,
-				65D670122777696B0071F2B2 /* ReminderDetailViewDataSource.swift */,
-				651000EE2764826C0007E705 /* ReminderDetailViewController.swift */,
-				653E2030275CA9FD0037074E /* Assets.xcassets */,
-				653E2032275CA9FD0037074E /* LaunchScreen.storyboard */,
-				653E2035275CA9FD0037074E /* Info.plist */,
 				653E203B275CB62D0037074E /* Reminder.swift */,
 				65D6701B277D5B500071F2B2 /* ReminderDetailEditDataSource.swift */,
+				651000EE2764826C0007E705 /* ReminderDetailViewController.swift */,
+				65D670122777696B0071F2B2 /* ReminderDetailViewDataSource.swift */,
+				651000F02767A6600007E705 /* ReminderListDataSource.swift */,
+				653E202B275CA9FB0037074E /* ReminderListViewController.swift */,
+				653E2029275CA9FB0037074E /* SceneDelegate.swift */,
+				653E202D275CA9FB0037074E /* Main.storyboard */,
+				653E2032275CA9FD0037074E /* LaunchScreen.storyboard */,
+				653E2030275CA9FD0037074E /* Assets.xcassets */,
+				653E2035275CA9FD0037074E /* Info.plist */,
 			);
 			path = Today;
 			sourceTree = "<group>";

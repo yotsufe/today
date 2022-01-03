@@ -36,7 +36,7 @@ class ReminderDetailEditDataSource: NSObject {
                 return "EditNotesCell"
             }
         }
-     }
+    }
 
     static var dateLabelCellIdentifier: String {
         return ReminderSection.dueDate.cellIdentifier(for: 0)
@@ -69,6 +69,7 @@ class ReminderDetailEditDataSource: NSObject {
             if let titleCell = cell as? EditTitleCell {
                 titleCell.configure(title: reminder.title) { title in
                     self.reminder.title = title
+                    self.reminderChangeAction?(self.reminder)
                 }
             }
         case .dueDate:

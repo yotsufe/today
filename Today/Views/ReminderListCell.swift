@@ -7,7 +7,7 @@ class ReminderListCell: UITableViewCell {
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var doneButton: UIButton!
 
-    var doneButtonAction: DoneButtonAction?
+    private var doneButtonAction: DoneButtonAction?
 
     @IBAction func doneButtonTriggered(_ sender: UIButton) {
         doneButtonAction?()

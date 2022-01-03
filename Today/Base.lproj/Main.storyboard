@@ -138,29 +138,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KIP-pV-PHF">
-                                            <rect key="frame" x="20" y="11" width="374" height="194"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="194" id="8Bg-cC-gOx"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zJd-gN-8S3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
                                         </datePicker>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="zJd-gN-8S3" secondAttribute="bottom" id="7Dy-Oc-boz"/>
-                                        <constraint firstItem="KIP-pV-PHF" firstAttribute="leading" secondItem="uy1-hC-CV9" secondAttribute="leadingMargin" id="83o-b3-ptW"/>
-                                        <constraint firstAttribute="bottom" secondItem="zJd-gN-8S3" secondAttribute="bottom" id="NF3-Ng-r6G"/>
-                                        <constraint firstAttribute="trailing" secondItem="zJd-gN-8S3" secondAttribute="trailing" id="OQT-Jg-e1T"/>
-                                        <constraint firstItem="KIP-pV-PHF" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="topMargin" id="djv-5o-kK2"/>
-                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="top" id="eSr-V7-jjy"/>
-                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="leading" secondItem="uy1-hC-CV9" secondAttribute="leading" id="frd-wI-Voj"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="KIP-pV-PHF" secondAttribute="bottom" id="hNZ-3P-QU0"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KIP-pV-PHF" secondAttribute="trailing" id="lQf-i3-wY0"/>
-                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="top" id="lQh-jj-f8c"/>
+                                        <constraint firstAttribute="trailing" secondItem="zJd-gN-8S3" secondAttribute="trailing" id="2S8-JL-eCC"/>
+                                        <constraint firstAttribute="bottom" secondItem="zJd-gN-8S3" secondAttribute="bottom" id="7GV-4R-jTI"/>
+                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="leading" secondItem="uy1-hC-CV9" secondAttribute="leading" id="Iol-a7-OjD"/>
+                                        <constraint firstItem="zJd-gN-8S3" firstAttribute="top" secondItem="uy1-hC-CV9" secondAttribute="top" id="s8u-Or-iy2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
